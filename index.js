@@ -65,7 +65,7 @@ io.on('connection', function (socket) {
     console.log('log chat message listener',msg)   
      console.log('socketid---',socket.id) 
       
-    console.log('chat message event parameters ',msg)
+    console.log('chat message event parameters 33 ',msg)
     var myRoom = players[socket.id].currentRoom;
     var gameState = {'test':123}
     socket.broadcast.to(myRoom.id).emit('setWasRequested', gameState);
